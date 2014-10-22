@@ -29,8 +29,11 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 
 " Basic settings
-set number " line number
-syntax on " syntax highlighting
+set number           " show line number
+syntax on            " syntax highlighting
+set expandtab        " expand tabs to spaces
+set shiftwidth=4     " what happens when you press >>, << or ==
+set softtabstop=4    " what happens when you press <TAB> or <BS>
 
 " colorscheme molokai
 " colorscheme jellybeans

@@ -1,1 +1,5 @@
 Vim configuration
+
+git clone https://github.com/samk64/dotvim ~/.vim
+echo runtime vimrc \" this points the runtime to the actual .vimrc file > .vimrc
+
