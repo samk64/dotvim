@@ -116,10 +116,10 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg', '.pyc']
-
+let NERDTreeDirArrows=0
 " NERDTreeTabs
 map <leader>n <plug>NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup = 1  
+" let g:nerdtree_tabs_open_on_console_startup = 1  
 
 " CtrlP
 nnoremap <leader>m :CtrlPBufTag<CR>
