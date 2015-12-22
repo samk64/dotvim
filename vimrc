@@ -19,19 +19,19 @@ call vundle#rc()
 
 " Git libraries
 Plugin 'gmarik/Vundle.vim'                  " plugin manager
-Plugin 'scrooloose/nerdtree'                " file manager 
+"Plugin 'scrooloose/nerdtree'                " file manager 
 Plugin 'jistr/vim-nerdtree-tabs'            " variant of NERDTree
-Plugin 'kien/ctrlp.vim'                     " fuzzyfinder search
-Plugin 'majutsushi/tagbar'                  " class outline viewer
-Plugin 'Shougo/unite.vim'                   " create user interfaces
-Plugin 'Shougo/neocomplcache'               " autocompletion
+"Plugin 'kien/ctrlp.vim'                     " fuzzyfinder search
+"Plugin 'majutsushi/tagbar'                  " class outline viewer
+"Plugin 'Shougo/unite.vim'                   " create user interfaces
+"Plugin 'Shougo/neocomplcache'               " autocompletion
 "Plugin 'Shougo/neocomplete.vim'             " autocompletion
-Plugin '29decibel/codeschool-vim-theme'     " colorscheme codeschool
-Plugin 'w0ng/vim-hybrid'                    " colorscheme hybrid
-Plugin 'nanotech/jellybeans.vim'            " colorscheme jellybeans
-Plugin 'tomasr/molokai'                     " colorscheme molokai
+"Plugin '29decibel/codeschool-vim-theme'     " colorscheme codeschool
+"Plugin 'w0ng/vim-hybrid'                    " colorscheme hybrid
+"Plugin 'nanotech/jellybeans.vim'            " colorscheme jellybeans
+"Plugin 'tomasr/molokai'                     " colorscheme molokai
 Plugin 'sickill/vim-monokai'                " colorscheme monokai
-Plugin 'altercation/vim-colors-solarized'   " colorscheme solarized
+"Plugin 'altercation/vim-colors-solarized'   " colorscheme solarized
 
 " Vim libraries
 "Plugin 'Yggdroot/indentLine'               " vim library 
@@ -101,8 +101,8 @@ map <leader>h :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 " Colorschemes
 """"""""""""""""""""""""
 
-let g:solarized_termcolors=256 " apply if not using terminal color scheme
-set background=dark
+"let g:solarized_termcolors=256 " apply if not using terminal color scheme
+"set background=dark
 colorscheme monokai 
 
 """"""""""""""""""""""""
@@ -122,20 +122,20 @@ map <leader>n <plug>NERDTreeTabsToggle<CR>
 " let g:nerdtree_tabs_open_on_console_startup = 1  
 
 " CtrlP
-nnoremap <leader>m :CtrlPBufTag<CR>
+"nnoremap <leader>m :CtrlPBufTag<CR>
 " nnoremap <leader>p :CtrlP<CR>
 "let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPLastMode'
-let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
+"let g:ctrlp_cmd = 'CtrlPLastMode'
+"let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 
 " Unite
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-call unite#custom#source('file,file/new,buffer,file_rec,line', 'matchers', 'matcher_fuzzy')
-nnoremap <leader>f :<C-u>Unite -buffer-name=search -start-insert line<cr>
+"call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"call unite#filters#sorter_default#use(['sorter_rank'])
+"call unite#custom#source('file,file/new,buffer,file_rec,line', 'matchers', 'matcher_fuzzy')
+"nnoremap <leader>f :<C-u>Unite -buffer-name=search -start-insert line<cr>
 
 " Tagbar (Class method listing)
-nnoremap <leader>t :TagbarToggle<CR>
+"nnoremap <leader>t :TagbarToggle<CR>
 
 " Neocomplcache
-let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_at_startup = 1
